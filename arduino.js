@@ -1,9 +1,15 @@
-var five = require("johnny-five");
-var board = new five.Board();
+const five = require("johnny-five");
+// const  board = new five.Board();
 
-board.on("ready", function() {
+module.exports = {
+  print(message) {
+    board.on("ready", () => {
 
-  var lcd = new five.LCD({ pins: [7, 8, 9, 10, 11, 12] });
+      const lcd = new five.LCD({ pins: [7, 8, 9, 10, 11, 12] });
 
-  lcd.print("Hola Mundo");
-});
+      lcd.print(message);
+    });
+    console.log('hey');
+    return console.log(message);
+  }
+}

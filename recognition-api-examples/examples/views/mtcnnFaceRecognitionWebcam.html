@@ -96,6 +96,9 @@
         const bestMatch = getBestMatch(trainDescriptorsByClass, descriptor)
         const text = `${bestMatch.distance < maxDistance ? bestMatch.className : 'unkown'} (${bestMatch.distance})`
         const { x, y, height: boxHeight } = detection.getBox()
+        fetch(`/message/${text}`)
+        .then(() => console.log('live'))
+        .catch(e=> console.error(e));
         faceapi.drawText(
           canvas.getContext('2d'),
           x,

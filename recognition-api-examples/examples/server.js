@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const { get } = require('request')
-
+const { print } = require('../../arduino.js');
 const app = express()
 
 app.use(express.json())
@@ -45,6 +45,15 @@ app.post('/fetch_external_image', async (req, res) => {
     return res.status(404).send(err.toString())
   }
 })
+
+app.get('/message/:message', async (req, res) => {
+  const { message } = req.params;
+  if (!message) {
+    return res.status(400).send('message param required')
+  }
+    print(message);
+    res.status(200).send(message);
+});
 
 app.listen(3000, () => console.log('Listening on port 3000!'))
 
