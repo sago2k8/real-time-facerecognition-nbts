@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/sago2k8/real-time-facerecognition-nbts#readme",
   "dependencies": {
+<<<<<<< HEAD
     "johnny-five": "^0.15.0"
+=======
+    "node-webcam": "^0.4.3"
+>>>>>>> upstream/master
   }
 }
