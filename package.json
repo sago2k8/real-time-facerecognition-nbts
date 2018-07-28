@@ -1,0 +1,19 @@
+{
+  "name": "real-time-facerecognition-nbts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sago2k8/real-time-facerecognition-nbts.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sago2k8/real-time-facerecognition-nbts/issues"
+  },
+  "homepage": "https://github.com/sago2k8/real-time-facerecognition-nbts#readme"
+}
