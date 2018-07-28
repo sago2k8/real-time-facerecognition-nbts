@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sago2k8/real-time-facerecognition-nbts/issues"
   },
-  "homepage": "https://github.com/sago2k8/real-time-facerecognition-nbts#readme"
+  "homepage": "https://github.com/sago2k8/real-time-facerecognition-nbts#readme",
+  "dependencies": {
+    "node-webcam": "^0.4.3"
+  }
 }
